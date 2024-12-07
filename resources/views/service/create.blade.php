@@ -21,7 +21,7 @@
         @endif
 
 
-        <form action="{{ route('services.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('services.store') }}" method="POST" enctype="multipart/form-data" onsubmit="return confirm('Anda yakin dengan desain ini?');">
             @csrf
             <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Club</label>
             <input type="title" name="title" value="{{old('title')}}" id="title"
