@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: Tugas-Akhir2/tree/main/resources/views/home.blade.php
+          source: ./Tugas-Akhir2/resources/views/home.blade.php
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
